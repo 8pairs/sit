@@ -9,7 +9,7 @@ function alertBlock() {
 // }
 
 function info() {
-    alert('Version 3.1 STABLE\nMobile Support: n/a\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
+    alert('Version 3.2 STABLE\nMobile Support: n/a\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
 }
 
 function developer() {
