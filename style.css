@@ -402,10 +402,11 @@ h6 {
 
 #warning-header {
     height: 50px;
-    background-color: #d1de23;
+    background-color: #e2f205;
     width: 100%;
     text-color: #000;
     text-align: center;
+    margin: 0;
 }
 
 /* warning */
