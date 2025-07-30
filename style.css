@@ -397,3 +397,15 @@ h6 {
         }
     }
 }
+
+/* warning */
+
+#warning-header {
+    height: 50px;
+    background-color: #d1de23;
+    width: 100%;
+    text-color: #000;
+    text-align: center;
+}
+
+/* warning */
