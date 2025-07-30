@@ -401,12 +401,12 @@ h6 {
 /* warning */
 
 #warning-header {
-    height: 50px;
-    background-color: #e2f205;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #eeff00;
     width: 100%;
-    text-color: #000;
+    color: #000;
     text-align: center;
-    margin-top: -10px;
 }
 
 /* warning */
