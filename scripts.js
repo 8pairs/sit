@@ -13,7 +13,7 @@ function info() {
 }
 
 function developer() {
-    alert('Developer error codes\n\n0x01 · Gmail mailto: no longer works\n0x02 · Javascript disabled\n0x03 · Legacy website no longer works\n0x04 · Website blocked alert\n\nDeveloper attention needed\n\nCSS revision\nLogo revision\nMobile support\nRecoloring/Sat fix\nDark mode?\nMore / more refined information')
+    alert('Developer error codes\n\n0x01 · Gmail mailto: no longer works\n0x02 · Javascript disabled\n0x03 · Legacy website no longer works\n0x04 · Website blocked alert\n\nDeveloper attention needed\n\nCSS revision\nMobile support\nRecoloring/Sat fix\nMore / more refined information')
 }
 
 function gmailSorry() {
