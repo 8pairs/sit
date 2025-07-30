@@ -3,10 +3,10 @@ function alertBlock() {
     alert('Warning: This site may be blocked on the SUHSD network, please use a personal device with mobile cell service, or on a personal network.\n\nWe are working on getting our site unblocked as alternatives are not free. If you would like to contribute, please email [ it.help@sweetwaterschools.org ] following the email format listed in our announcements channel here [ https://discord.gg/w8wq64D7v5 ].\n\nThank You!\n\n0x04')
 }
 
-alertLegacy ()
-function alertLegacy() {
-    alert('Our site is currently unfinished, it may change as time goes on.')
-}
+// alertLegacy ()
+// function alertLegacy() {
+//     alert('Our site is currently unfinished, it may change as time goes on.')
+// }
 
 function info() {
     alert('Version 3.1 STABLE\nMobile Support: n/a\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
