@@ -1,7 +1,7 @@
-alertBlock()
-function alertBlock() {
-    alert('Warning: This site may be blocked on the SUHSD network, please use a personal device with mobile cell service, or on a personal network.\n\nWe are working on getting our site unblocked as alternatives are not free. If you would like to contribute, please email [ it.help@sweetwaterschools.org ] following the email format listed in our announcements channel here [ https://discord.gg/w8wq64D7v5 ].\n\nThank You!\n\n0x04')
-}
+// alertBlock()
+// function alertBlock() {
+//     alert('Warning: This site may be blocked on the SUHSD network, please use a personal device with mobile cell service, or on a personal network.\n\nWe are working on getting our site unblocked as alternatives are not free. If you would like to contribute, please email [ it.help@sweetwaterschools.org ] following the email format listed in our announcements channel here [ https://discord.gg/w8wq64D7v5 ].\n\nThank You!\n\n0x04')
+// }
 
 // alertLegacy ()
 // function alertLegacy() {
