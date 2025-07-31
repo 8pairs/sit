@@ -9,7 +9,7 @@ function alertBlock() {
 // }
 
 function info() {
-    alert('Version 3.2 STABLE\nMobile Support: n/a\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
+    alert('Version 4.0 STABLE\nMobile Support: n/a\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
 }
 
 function developer() {
@@ -78,3 +78,68 @@ function linkedB() {
         o3.classList.toggle('footer-alert');
     }, 1800);
 }
+
+function applyTheme() {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+}
+
+applyTheme();
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+
+let bufferF = "";
+
+document.addEventListener("keydown", (event) => {
+
+    bufferF += event.key;
+
+    if (bufferF.length > 14) bufferF = bufferF.slice(-14);
+
+    if (bufferF.endsWith("fixyourposture")) {
+
+        replaceAllImages('images/FIX-YOUR-POSTURE.jpg')
+        function replaceAllImages(newImageUrl) {
+            const images = document.getElementsByTagName('img');
+
+            for (let i = 0; i < images.length; i++) {
+                images[i].src = newImageUrl;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const newImageSource = 'images/FIX-YOUR-POSTURE.jpg';
+            replaceAllImages(newImageSource);
+        });
+
+        const elementsWithBackground = document.querySelectorAll('.iot, .sit, .community');
+
+        elementsWithBackground.forEach(element => {
+            element.style.backgroundImage = 'url("images/FIX-YOUR-POSTURE.jpg")';
+        });
+        bufferF = "";
+    }
+});
+
+let bufferO = "";
+
+document.addEventListener("keydown", (event) => {
+
+    bufferO += event.key;
+
+    if (bufferO.length > 8) bufferO = bufferO.slice(-8);
+
+    if (bufferO.endsWith("override")) {
+
+        const root = document.documentElement;
+
+        toggleTheme()
+        function toggleTheme() {
+            if (root.dataset.theme === 'light') {
+                root.dataset.theme = 'dark';
+            } else {
+                root.dataset.theme = 'light';
+            }
+        }
+        bufferO = "";
+    }
+});
