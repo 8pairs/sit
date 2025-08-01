@@ -30,7 +30,7 @@
             <img src="images/banner.png" id="banner">
             <b id="x" onclick="removeBanner()">X</b>
             <hr id="banner-hr">
-            <h1 id="about-us">Who Are We?</h1>
+            <h1>Who Are We?</h1>
             <div id="container-whoami">
                 <div id="container" class="moveover">
                     <div id="inner" class="iot"></div>
@@ -193,7 +193,7 @@
             <img id="footer-img-03" onclick="gmailSorry()" src="icons/gmail.svg">
             <hr>
             <span id="footer-01" onclick="info()">Info</span>
-            <span id="footer-02" onclick="alert('No Cookies')" title="🍪👀"">Cookies</span>
+            <span id="footer-02" onclick="alert('No Cookies')" title="🍪👀">Cookies</span>
             <span id="footer-02" onclick="c1()">Legacy</span>
             <img id="footer-img-d" onclick="developer()" src="icons/developer.png">
             <br><br><br><br>
@@ -203,6 +203,12 @@
         </div>
     </div>
 <!-- JQuery & Main scripts -->
+<!-- Mobile redirection script -->
+<script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)) {
+        location.href = ('/mobile.html')
+    }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scripts.js"></script>
 <script src="href.js"></script>

@@ -41,16 +41,16 @@
     --text-footer: #d5d5d5;
     --text-general: #d6d6d6;
     --market-filter: invert(.5);
-}
 
-&::-webkit-scrollbar[data-theme='dark'] {
-    width: 16px;
-}
+    &::-webkit-scrollbar[data-theme='dark'] {
+        width: 16px;
+    }
 
-&::-webkit-scrollbar-thumb[data-theme='dark'] {
-    background-color: var(--header-data-color) !important;
-    border-radius: 10px;
-    border: 3px solid var(--header-data-color-d) !important;
+    &::-webkit-scrollbar-thumb[data-theme='dark'] {
+        background-color: var(--header-data-color) !important;
+        border-radius: 10px;
+        border: 3px solid var(--header-data-color-d) !important;
+    }
 }
 
 body {
