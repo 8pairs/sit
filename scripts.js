@@ -9,11 +9,11 @@
 // }
 
 function info() {
-    alert('Version 5.2 OFFICIAL\nMobile Support: Avalible\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
+    alert('Version 5.2.2 OFFICIAL\nMobile Support: Avalible\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
 }
 
 function developer() {
-    alert('Developer error codes\n\n0x01 · Gmail mailto: no longer works\n0x02 · Javascript disabled\n0x03 · Legacy website no longer works\n0x04 · Website blocked alert\n\nDeveloper attention needed\n\nCSS revision\nRecoloring/Sat fix\nMore / more refined information')
+    alert('Developer error codes\n\n0x01 · Gmail mailto: no longer works\n0x02 · Javascript disabled\n0x03 · Legacy website no longer works\n0x04 · Website blocked alert\n\nDeveloper attention needed\n\nCSS revision\nRecoloring/Sat fix\nMore / more refined information\n\noverride\nfixyourposture\nsuhsd\nmobile')
 }
 
 function gmailSorry() {
@@ -175,3 +175,4 @@ document.addEventListener("keydown", (event) => {
         bufferS = "";
     }
 });
+
