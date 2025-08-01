@@ -166,7 +166,7 @@ document.addEventListener("keydown", (event) => {
 
     bufferS += event.key;
 
-    if (bufferM.length > 5) bufferS = bufferS.slice(-5);
+    if (bufferS.length > 5) bufferS = bufferS.slice(-5);
 
     if (bufferS.endsWith("mobile")) {
 
@@ -175,5 +175,6 @@ document.addEventListener("keydown", (event) => {
         bufferS = "";
     }
 });
+
 
 
