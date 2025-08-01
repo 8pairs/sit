@@ -143,3 +143,19 @@ document.addEventListener("keydown", (event) => {
         bufferO = "";
     }
 });
+
+let bufferM = "";
+
+document.addEventListener("keydown", (event) => {
+
+    bufferM += event.key;
+
+    if (bufferM.length > 6) bufferM = bufferM.slice(-6);
+
+    if (bufferM.endsWith("mobile")) {
+
+        location.href=('/sit/mobile.html')
+
+        bufferM = "";
+    }
+});
