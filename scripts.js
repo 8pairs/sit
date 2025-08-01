@@ -168,13 +168,14 @@ document.addEventListener("keydown", (event) => {
 
     if (bufferS.length > 5) bufferS = bufferS.slice(-5);
 
-    if (bufferS.endsWith("mobile")) {
+    if (bufferS.endsWith("suhsd")) {
 
         location.href=('/sit/suhsd.html')
 
         bufferS = "";
     }
 });
+
 
 
 
