@@ -277,12 +277,12 @@ h6 {
         box-shadow: 0 0 15px var(--container-box-shadow);
         width: 25%;
         display: inline-table;
-        height: 360px;
+        height: 380px;
         background-color: var(--header-data-color);
         overflow: scroll;
 
         >#inner {
-            height: 60%;
+            height: 55%;
             width: 100%;
             background-repeat: no-repeat;
             background-size: cover;
@@ -293,7 +293,7 @@ h6 {
             padding-left: 15px;
             padding-right: 15px;
             line-height: 1.4;
-            height: 40%;
+            height: 45%;
             color: var(--text-general);
             overflow: scroll;
 

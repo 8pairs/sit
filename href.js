@@ -4,15 +4,15 @@ function goober() {
 // goobies (SHHHH)
 
 function a1() {
-    location.href=('https://docs.google.com/forms/d/e/1FAIpQLSfRCxJ9Ze56ej9-DBKNMAIvc-wO2iVONtDEPFUEInntmv4vBA/viewform')
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfRCxJ9Ze56ej9-DBKNMAIvc-wO2iVONtDEPFUEInntmv4vBA/viewform', '_blank').focus();
 }
 
 function b1() {
-    location.href=('https://www.instagram.com/sit_orhs/')
+    window.open('https://www.instagram.com/sit_orhs/', '_blank').focus();
 }
 
 function b2() {
-    location.href=('https://discord.gg/n4ngUWPA5v')
+    window.open('https://discord.gg/n4ngUWPA5v', '_blank').focus();
 }
 
 function c1() {
@@ -21,7 +21,7 @@ function c1() {
 }
 
 function d1() {
-    location.href=('https://github.com/8pairs/sit')
+    window.open('https://github.com/8pairs/sit', '_blank').focus();
 }
 
 function e1() {
@@ -29,5 +29,5 @@ function e1() {
 }
 
 function f1() {
-    location.href=('https://forms.gle/yBRqjggKt3fBfRF56')
+    window.open('https://forms.gle/yBRqjggKt3fBfRF56', '_blank').focus();
 }
