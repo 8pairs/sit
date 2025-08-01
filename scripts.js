@@ -159,3 +159,19 @@ document.addEventListener("keydown", (event) => {
         bufferM = "";
     }
 });
+
+let bufferS = "";
+
+document.addEventListener("keydown", (event) => {
+
+    bufferS += event.key;
+
+    if (bufferM.length > 6) bufferS = bufferS.slice(-6);
+
+    if (bufferS.endsWith("mobile")) {
+
+        location.href=('/sit/suhsd.html')
+
+        bufferS = "";
+    }
+});
