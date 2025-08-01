@@ -27,3 +27,7 @@ function d1() {
 function e1() {
     location.href=('/sit/media/medialibrary.html')
 }
+
+function f1() {
+    location.href=('https://forms.gle/yBRqjggKt3fBfRF56')
+}
