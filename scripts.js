@@ -9,7 +9,7 @@
 // }
 
 function info() {
-    alert('Version 5.2.3 OFFICIAL\nMobile Support: Avalible\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
+    alert('Version 5.2.4 OFFICIAL\nMobile Support: Avalible\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
 }
 
 function developer() {
@@ -175,6 +175,7 @@ document.addEventListener("keydown", (event) => {
         bufferS = "";
     }
 });
+
 
 
 
