@@ -141,6 +141,12 @@ body {
     cursor: pointer;
 }
 
+#footer-a4 {
+    margin-left: 30px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
 [id^="footer-img-0"] {
     float: right;
     cursor: pointer;
