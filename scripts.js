@@ -9,7 +9,7 @@
 // }
 
 var versionNumber = "v5.2.61"
-document.getElementById('version-number').innerHTML = versionNumber
+document.getElementById('footer-a4').innerHTML = versionNumber
 
 function info() {
     alert('Version ' versionNumber ' OFFICIAL\nMobile Support: Avalible\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
@@ -178,6 +178,7 @@ document.addEventListener("keydown", (event) => {
         bufferS = "";
     }
 });
+
 
 
 
