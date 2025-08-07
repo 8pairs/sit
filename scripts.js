@@ -8,11 +8,11 @@
 //     alert('Our site is currently unfinished, it may change as time goes on.')
 // }
 
-var versionNumber = "v5.2.61"
+var versionNumber = "v5.2.62"
 document.getElementById('footer-a4').innerHTML = versionNumber
 
 function info() {
-    alert('Version ' versionNumber ' OFFICIAL\nMobile Support: Avalible\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
+    alert('Version " + versionNumber + " OFFICIAL\nMobile Support: Avalible\nWebsite Revision Version: 3\n\nCurrent URL: https://8pairs.github.io/sit/\nNon-responsive, no forms or sql\n\nContact Isaac for changes')
 }
 
 function developer() {
@@ -178,6 +178,7 @@ document.addEventListener("keydown", (event) => {
         bufferS = "";
     }
 });
+
 
 
 
