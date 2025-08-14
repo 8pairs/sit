@@ -8,7 +8,7 @@
 //     alert('Our site is currently unfinished, it may change as time goes on.')
 // }
 
-var versionNumber = "v5.2.81"
+var versionNumber = "v5.2.82"
 document.getElementById('footer-a4').innerHTML = versionNumber
 
 function info() {
@@ -178,6 +178,7 @@ document.addEventListener("keydown", (event) => {
         bufferS = "";
     }
 });
+
 
 
 
