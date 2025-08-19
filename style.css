@@ -287,15 +287,6 @@ h6 {
         background-color: var(--header-data-color);
         overflow: scroll;
 
-    >#containerNEH {
-        box-shadow: 0 0 15px var(--container-box-shadow);
-        width: 25%;
-        display: none;
-        height: 380px;
-        background-color: var(--header-data-color);
-        overflow: scroll;
-    }
-
         >#inner {
             height: 55%;
             width: 100%;
@@ -368,6 +359,17 @@ h6 {
         display: inline-table;
         margin: 5px;
         box-shadow: 0 0 15px var(--container-box-shadow);
+
+    >#containerNEH {
+        background-color: var(--header-data-color);
+        width: 30%;
+        height: 400px;
+        line-height: 1.4;
+        color: var(--text-general);
+        display: none;
+        margin: 5px;
+        box-shadow: 0 0 15px var(--container-box-shadow);
+    }
 
         >p {
             margin-top: -15px;
