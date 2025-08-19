@@ -8,7 +8,7 @@
 //     alert('Our site is currently unfinished, it may change as time goes on.')
 // }
 
-var versionNumber = "v5.2.82"
+var versionNumber = "v5.3"
 document.getElementById('footer-a4').innerHTML = versionNumber
 
 function info() {
@@ -178,6 +178,24 @@ document.addEventListener("keydown", (event) => {
         bufferS = "";
     }
 });
+
+
+let bufferNe = "";
+
+document.addEventListener("keydown", (event) => {
+
+    bufferNe += event.key;
+
+    if (bufferNe.length > 3) bufferNe = bufferNe.slice(-3);
+
+    if (bufferNe.endsWith("neh")) {
+
+        document.getElementById('containerNEH').style.display = "block"
+
+        bufferNe = "";
+    }
+});
+
 
 
 
