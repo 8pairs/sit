@@ -359,6 +359,26 @@ h6 {
         display: inline-table;
         margin: 5px;
         box-shadow: 0 0 15px var(--container-box-shadow);
+    
+        >p {
+            margin-top: -15px;
+            opacity: 0.6;
+        }
+
+        >img {
+            margin: 19px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--img-box-shadow);
+        }
+
+        >h2 {
+            margin-top: -20px;
+        }
+
+        >#interests {
+            text-align: left;
+            margin-left: 30px;
+        }
     }
 
     >#containerNEH {
@@ -370,8 +390,7 @@ h6 {
         color: var(--text-general);
         margin: 5px;
         box-shadow: 0 0 15px var(--container-box-shadow);
-    }
-
+    
         >p {
             margin-top: -15px;
             opacity: 0.6;
