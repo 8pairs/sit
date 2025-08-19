@@ -382,7 +382,7 @@ h6 {
     }
 
     >#containerNEH {
-        display: none!important;
+        display: none;
         background-color: var(--header-data-color);
         width: 30%;
         height: 400px;
