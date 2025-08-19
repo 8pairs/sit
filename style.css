@@ -361,12 +361,12 @@ h6 {
         box-shadow: 0 0 15px var(--container-box-shadow);
 
     >#containerNEH {
+        display: none!important;
         background-color: var(--header-data-color);
         width: 30%;
         height: 400px;
         line-height: 1.4;
         color: var(--text-general);
-        display: none;
         margin: 5px;
         box-shadow: 0 0 15px var(--container-box-shadow);
     }
