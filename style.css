@@ -288,7 +288,12 @@ h6 {
         overflow: scroll;
 
     >#containerNEH {
+        box-shadow: 0 0 15px var(--container-box-shadow);
+        width: 25%;
         display: none;
+        height: 380px;
+        background-color: var(--header-data-color);
+        overflow: scroll;
     }
 
         >#inner {
