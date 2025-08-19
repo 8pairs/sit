@@ -190,11 +190,12 @@ document.addEventListener("keydown", (event) => {
 
     if (bufferNe.endsWith("neh")) {
 
-        document.getElementById('containerNEH').style.display = "block"
+        document.getElementById('containerNEH').style.display = "inline-table"
 
         bufferNe = "";
     }
 });
+
 
 
 
