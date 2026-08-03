@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon" />
+    <title>ORHS Iceburg</title>
+    <noscript>You don't have JavaScript enabled.</noscript>
+</head>
+
+<!-- Basically ignore this, or remove it if you dont like it -->
+
+<body>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            height: 1580px;
+            width: 1920px;
+            background-color: black;
+            color: white;
+            margin: 0;
+            overflow-y: scroll;
+            overflow-x: scroll;
+        }
+
+        .body {
+            height: 1579px;
+            width: 1919px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 67%;
+        }
+
+        #modal {
+            width: 700px;
+            height: 500px;
+            color: red;
+            background-color: black;
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid red;
+            text-align: center;
+            display: none;
+
+            >hr {
+                border: 1px solid red;
+                width: 90%;
+            }
+
+            >p {
+                margin: 20px;
+            }
+
+            >#x {
+                float: right;
+                margin-right: 10px;
+                margin-top: 10px;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+
+        /* entries */
+
+        [class*="E_"] {
+            /* border: 1px solid red; */
+            position: absolute;
+            &:hover {
+                border: 3px dotted grey;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            &:active {
+                transform: translateY(1px);
+            }
+        }
+
+        .E_school_fights {
+            height: 30px;
+            width: 150px;
+            margin-top: 43px;
+            margin-left: 370px;
+        }
+
+        .E_BBL_lady {
+            height: 30px;
+            width: 100px;
+            margin-top: 27px;
+            margin-left: 581px;
+        }
+
+        .E_KOR_news {
+            height: 30px;
+            width: 110px;
+            margin-top: 37px;
+            margin-left: 817px;
+        }
+
+        .E_DOJ_exclusion_zone {
+            height: 60px;
+            width: 150px;
+            margin-top: 47px;
+            margin-left: 1159px;
+        }
+
+        .E_otay_on_top {
+            height: 30px;
+            width: 135px;
+            margin-top: 142px;
+            margin-left: 424px;
+        }
+
+        .E_BLUE_and_the_blue_way {
+            height: 60px;
+            width: 160px;
+            margin-top: 87px;
+            margin-left: 615px;
+        }
+
+        .E_school_rivalries {
+            height: 30px;
+            width: 160px;
+            margin-top: 157px;
+            margin-left: 788px;
+        }
+
+        .E_vaping_in_the_bathrooms {
+            height: 60px;
+            width: 138px;
+            margin-top: 100px;
+            margin-left: 1000px;
+        }
+
+        .E_battle_of_the_os {
+            height: 30px;
+            width: 160px;
+            margin-top: 256px;
+            margin-left: 405px;
+        }
+
+        .E_terrible_varsity_football {
+            height: 60px;
+            width: 165px;
+            margin-top: 240px;
+            margin-left: 720px;
+        }
+
+        .E_school_surplus {
+            height: 30px;
+            width: 165px;
+            margin-top: 243px;
+            margin-left: 915px;
+        }
+
+        .E_the_bungalows {
+            height: 30px;
+            width: 165px;
+            margin-top: 275px;
+            margin-left: 1055px;
+        }
+
+        .E_the_december_roughousing {
+            height: 60px;
+            width: 160px;
+            margin-top: 284px;
+            margin-left: 336px;
+        }
+
+        .E_behind_the_library {
+            height: 30px;
+            width: 180px;
+            margin-top: 322px;
+            margin-left: 533px;
+        }
+
+        .E_airdrops {
+            height: 30px;
+            width: 110px;
+            margin-top: 322px;
+            margin-left: 875px;
+        }
+
+        .E_ASB_inflation {
+            height: 30px;
+            width: 145px;
+            margin-top: 343px;
+            margin-left: 1096px;
+        }
+
+        .E_police_on_campus {
+            height: 30px;
+            width: 182px;
+            margin-top: 371px;
+            margin-left: 355px;
+        }
+
+        .E_military_presence {
+            height: 30px;
+            width: 170px;
+            margin-top: 388px;
+            margin-left: 695px;
+        }
+
+        .E_otays_online_presence {
+            height: 60px;
+            width: 140px;
+            margin-top: 370px;
+            margin-left: 974px;
+        }
+
+        .E_otay_toilet_paper_disaster {
+            height: 60px;
+            width: 180px;
+            margin-top: 368px;
+            margin-left: 1168px;
+        }
+
+        .E_eastlake_stabbing_incident {
+            height: 60px;
+            width: 180px;
+            margin-top: 488px;
+            margin-left: 410px;
+        }
+
+        .E_mater_dei_bomb_threat {
+            height: 60px;
+            width: 180px;
+            margin-top: 470px;
+            margin-left: 645px;
+        }
+
+        .E_2021_seaworld_homecoming {
+            height: 60px;
+            width: 170px;
+            margin-top: 493px;
+            margin-left: 850px;
+        }
+
+        .E_coach_christiansen_was_a_marine {
+            height: 60px;
+            width: 200px;
+            margin-top: 515px;
+            margin-left: 1110px;
+        }
+
+        .E_twin_day_was_on_sept_11 {
+            height: 60px;
+            width: 180px;
+            margin-top: 568px;
+            margin-left: 325px;
+        }
+
+        .E_snack_cartel {
+            height: 30px;
+            width: 130px;
+            margin-top: 550px;
+            margin-left: 590px;
+        }
+
+        .E_volenteer_victems {
+            height: 30px;
+            width: 180px;
+            margin-top: 568px;
+            margin-left: 749px;
+        }
+
+        .E_the_aviary {
+            height: 30px;
+            width: 130px;
+            margin-top: 650px;
+            margin-left: 425px;
+        }
+
+        .E_mrs_peralta {
+            height: 30px;
+            width: 130px;
+            margin-top: 609px;
+            margin-left: 640px;
+        }
+
+        .E_band_kids {
+            height: 30px;
+            width: 130px;
+            margin-top: 605px;
+            margin-left: 830px;
+        }
+
+        .E_who_wants_to_fight {
+            height: 60px;
+            width: 170px;
+            margin-top: 620px;
+            margin-left: 1090px;
+        }
+    </style>
+
+    <div class="body">
+        <img src="iceburh.webp">
+    </div>
+
+    <div name="School Fights" class="a E_school_fights" data-text="Self-explanatory, 2 students get into a little fight over something, usually it’s over something small, but it varies from person to person."></div>
+    <div name="BBL Lady" class="a E_BBL_lady" data-text="The notorious lunch supervisor known for bringing terror to anyone who is unfortunate enough to get on her bad side with anything. She has switched out of our school as of summer of 2025. "></div>
+    <div name="KOR News" class="a E_KOR_news" data-text="The news channel that runs in the school that is broadcasted to the entire school during ELP. As of the 2025-2026 school year, there have been no KOR news reports as of writing this."></div>
+    <div name="DOJ Exclusion Zone" class="a E_DOJ_exclusion_zone" data-text="The small obstacle course looking zone near the stadium bathroom, it appears to have not been used in quite a while due to the overgrowth and the absence of people ever in it during or after school."></div>
+    <div name="Otay On Top" class="a E_otay_on_top" data-text="Otay is the best school in the SUHSD, not much more needs to be said."></div>
+    <div name="BLUE And The Blue Way" class="a E_BLUE_and_the_blue_way" data-text="This is the policy that students at Otay Ranch follows, encouraging Belonging, Learning, Unity, and Empathy."></div>
+    <div name="School Rivalries" class="a E_school_rivalries" data-text="As with any school, we rival with other schools in our district (Otay stays on top). "></div>
+    <div name="Vaping In The Bathrooms" class="a E_vaping_in_the_bathrooms" data-text="Students will sometimes be seen in school bathrooms, either alone or in groups anytime during school. This goes on mostly in the 700's, 500's and bungalow bathrooms, but it's primarily in the 500's bathrooms."></div>
+    <div name="Battle of the O's" class="a E_battle_of_the_os" data-text="This is the feud between Otay Ranch and Olympian High School, to see which is superior (Still Otay Ranch on top)."></div>
+    <div name="Terrible Varsity Football" class="a E_terrible_varsity_football" data-text="The varsity football team SUCKS (This hoco game we lost 9-35)."></div>
+    <div name="School Surplus" class="a E_school_surplus" data-text="The bins full of old tech like the old computer towers, monitors, keyboards, etc."></div>
+    <div name="The Bungalows" class="a E_the_bungalows" data-text="The classrooms that are located near the 400's and 500's buildings, some smaller, lesser known classes are located there."></div>
+    <div name="The December Roughhousing" class="a E_the_december_roughousing" data-text="Coach James Gracio, former Otay teacher, allegedly told a student to stay after school so they could fight. The “fight” occurred in December of 2022(?) between the unnamed student and the teacher, and the student was left with wounds."></div>
+    <div name="Behind The Library" class="a E_behind_the_library" data-text="There tends to be some shady activities (NOT safe for school) going on back there, though it has cooled down."></div>
+    <div name="Airdrops" class="a E_airdrops" data-text="Students tend to airdrop random images and videos around the school, some of the material is worse than others, but usually it is pretty tame."></div>
+    <div name="ASB Inflation" class="a E_ASB_inflation" data-text=""></div>
+    <div name="Police on Campus" class="a E_police_on_campus" data-text="Throughout the lifetime of Otay Ranch High School, there have been police spotted on the campus during and after school."></div>
+    <div name="Military Presence" class="a E_military_presence" data-text=""></div>
+    <div name="Otays Online Presence" class="a E_otays_online_presence" data-text=""></div>
+    <div name="Otay Toilet Paper Disaster" class="a E_otay_toilet_paper_disaster" data-text=""></div>
+    <div name="Eastlake Stabbing Incident" class="a E_eastlake_stabbing_incident" data-text=""></div>
+    <div name="Mater Dei Bomb Threat" class="a E_mater_dei_bomb_threat" data-text=""></div>
+    <div name="2021 Sea World Homecoming" class="a E_2021_seaworld_homecoming" data-text=""></div>
+    <div name="Coach Christiansen Was A Marine" class="a E_coach_christiansen_was_a_marine" data-text=""></div>
+    <div name="Twin Day Was On September 11th" class="a E_twin_day_was_on_sept_11" data-text=""></div>
+    <div name="Snack Cartel" class="a E_snack_cartel" data-text=""></div>
+    <div name="Volenteer Victems" class="a E_volenteer_victems" data-text=""></div>
+    <div name="The Aviary" class="a E_the_aviary" data-text=""></div>
+    <div name="Mrs Peralta" class="a E_mrs_peralta" data-text=""></div>
+    <div name="Band Kids" class="a E_band_kids" data-text=""></div>
+    <div name="Who Wants To Fight" class="a E_who_wants_to_fight" data-text=""></div>
+
+    <div id="modal">
+        <div id="x">x</div>
+        <br>
+        <b id="modal-title"></b>
+        <hr>
+        <p id="modal-text"></p>
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+
+</html>

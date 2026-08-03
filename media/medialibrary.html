@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../icons/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+    <title>Media Library</title>
+    <meta charset="UTF-8">
+    <noscript>You don't have javascript enabled.</noscript>
+    <!-- Only remove if site is no longer proxied to sit.8pairs.net -->
+    <meta name="description" content="The official site for the ORHS club Student Integrated Technologies">
+    <meta property="og:title" content="Student Integrated Technologies">
+    <meta property="og:description" content="The official site for the ORHS club Student Integrated Technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sit.8pairs.net/">
+    <meta property="og:image" content="https://sit.8pairs.net/icons/sitOG.png">
+</head>
+<body>
+
+    <style>
+        #showOldDOC,
+        #showOldPDF,
+        #showOldIMG {
+            width: fit-content;
+            user-select: none;
+            color:#0000ee;
+            margin:0;
+            cursor: pointer;
+        }
+
+        .hiddenDOC,
+        .hiddenPDF,
+        .hiddenIMG {
+            display: none;
+        }
+    </style>
+
+    <script>
+        function funcShowLegacyDOC() {
+            document.getElementById("showOldDOC").style.display = "none"
+            const hiddenDOC = document.getElementsByClassName('hiddenDOC')
+            for (let i = 0; i < hiddenDOC.length; i++) {
+                hiddenDOC[i].style.display = "block"; // Turns all matched elements red
+            }
+        }
+        function funcShowLegacyPDF() {
+            document.getElementById("showOldPDF").style.display = "none"
+            const hiddenPDF = document.getElementsByClassName('hiddenPDF')
+            for (let i = 0; i < hiddenPDF.length; i++) {
+                hiddenPDF[i].style.display = "block"; // Turns all matched elements red
+            }
+        }
+        function funcShowLegacyIMG() {
+            document.getElementById("showOldIMG").style.display = "none"
+            const hiddenIMG = document.getElementsByClassName('hiddenIMG')
+            for (let i = 0; i < hiddenIMG.length; i++) {
+                hiddenIMG[i].style.display = "block"; // Turns all matched elements red
+            }
+        }
+    </script>
+
+    <!-- Try to sort by type.d -->
+    <!-- Its a good idea to keep this site updated, and keep a naming scheme for continuity -->
+
+    <a href="../index.html">[parent directory]</a>
+
+    <h3>Documents</h3>
+    <li class="hiddenDOC"><a href="docs/24-25/CommissionInfo.pdf">24/25 - Commission Info.pdf</a></li>
+    <!-- Example Item --> <li><a href="#">#1 Example DOC</a></li>
+    <li><p id="showOldDOC" onclick="funcShowLegacyDOC()">[Show Older Media]</p></li>
+
+    <h3>Presentations (PDFs may have weird formatting)</h3>
+    <li class="hiddenPDF"><a href="pdf/24-25/AnIntroductionToSIT.pdf">24/25 - An Introduction to SIT</a></li>
+    <li class="hiddenPDF"><a href="pdf/24-25/H.1.pdf">24/25 - Presentation #1</a></li>
+    <li class="hiddenPDF"><a href="pdf/24-25/CommissionsADeeperExplanation.pdf">24/25 - Commissions A Deeper Explanation</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/0-Pre-Orientation-Slides.pdf">25/26 - #0.5 SIT Pre-Orientation Slides</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/1-Orientation-Slides.pdf">25/26 - #1 SIT Orientation Slides</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/2-Hardware-Intro-Into-Hardware.pdf">25/26 - #2 Hardware: Introduction Into Hardware</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/3-Hardware-Deeper-Into-Hardware.pdf">25/26 - #3 Hardware: Deeper Into Hardware</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/4-Software-Intro-Into-Software.pdf">25/26 - #4 Software: Introduction Into Software</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/5-Software-Deeper-Into-Software.pdf">25/26 - #5 Software: Deeper Into Software</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/6-Hardware-Computers-Are-Everywhere.pdf">25/26 - #6 Hardware: Computers Are Everywhere</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/7-Hardware-Hands-On-Look.pdf">25/26 - #7 Hardware: Hands On Look</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/8-Software-Installing-Windows.pdf">25/26 - #8 Software: Installing Windows</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/9-Hardware-Technology-Upkeep.pdf">25/26 - #9 Hardware: Technology Upkeep</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/10-Hardware-Technology-Upkeep-Hands-On.pdf">25/26 - #10 Hardware: Technology Upkeep Hands On</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/11-Software-Dual-Booting.pdf">25/26 - #11 Software: Dual Booting</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/12-Hardware-Price-Increase.pdf">25/26 - #12 Hardware: Price Increase</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/13-Hardware-Career-Paths.pdf">25/26 - #13 Hardware: Career Paths</a></li>
+    <li class="hiddenPDF"><a href="pdf/25-26/14-Software-Career-Paths.pdf">25/26 - #14 Software: Career Paths</a></li>
+    <!-- Example Item --> <li><a href="#">#1 Example PDF</a></li>
+    <li><p id="showOldPDF" onclick="funcShowLegacyPDF()">[Show Older Media]</p></li>
+
+    <!-- Sometimes we didn't get media for a meeting, so I marked them with an onclick alert -->
+
+    <h3>Images / Advertisements</h3>
+    <li class="hiddenIMG"><a href="img/24-25/SIT-Meeting-1-Legacy.webp">24/25 - SIT Meeting #1</a></li>
+    <li class="hiddenIMG"><a href="img/24-25/SIT-Meeting-2-Legacy.webp">24/25 - SIT Meeting #2</a></li>
+    <li class="hiddenIMG"><a href="img/24-25/SIT-Meeting-3-Legacy.webp">24/25 - SIT Meeting #3</a></li>
+    <li class="hiddenIMG"><a href="img/24-25/SIT-Meeting-4-Legacy.webp">24/25 - SIT Meeting #4</a></li>
+    <li class="hiddenIMG"><a href="img/24-25/SIT-Meeting-5-Legacy.webp">24/25 - SIT Meeting #5</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/1-Meeting.webp">25/26 - #1 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/2-Meeting.webp">25/26 - #2 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/3-Meeting.webp">25/26 - #3 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/4-Meeting.webp">25/26 - #4 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a onclick="alert('No avalible image')">25/26 - #5 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/6-Meeting.webp">25/26 - #6 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/7-Meeting.webp">25/26 - #7 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/8-Meeting.webp">25/26 - #8 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/9-Meeting.webp">25/26 - #9 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a onclick="alert('No avalible image')">25/26 - #10 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/11-Meeting.webp">25/26 - #11 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/12-Meeting.webp">25/26 - #12 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a onclick="alert('No avalible image')">25/26 - #13 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a onclick="alert('No avalible image')">25/26 - #14 SIT Meeting</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/SIT-LUWOW.webp">25/26 - SIT Luwow</a></li>
+    <li class="hiddenIMG"><a href="img/25-26/SIT-FF.webp">25/26 - SIT Food Fair</a></li>
+    <!-- Example Item --> <li><a href="#">#1 Example IMG</a></li>
+    <li><p id="showOldIMG" onclick="funcShowLegacyIMG()">[Show Older Media]</p></li>
+
+    <!-- JQuery & Main scripts -->
+    <script src="https://api.dashboard.instatus.com/widget?host=8pairs.instatus.com&code=604214bd&locale=en"></script> <!-- 8pairs.net status popup, remove if transfered to GitHub -->
+</body>
+</html>

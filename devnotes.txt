@@ -1,0 +1,53 @@
+I apologise, this site is written so poorly and is not editor friendly :sob:
+
+If you need to edit it, I am happily able to help you out. I can edit major
+aspects for you, as it is a waste of time trying to figure out what the fuck
+I was on writing this.
+
+Otherwise, I have commented about everything in the JavaScript department to
+help you out a bit but other than things you already know most will not
+need editing.
+
+Notes:
+1. Officer profile pictures can be stored locally, or can be fetched from google
+   (I used inspect elemenet to grab the ones you can see that start with lh3.
+   also, make sure that all officer profile pictures are 64x64. You can force them
+   like this by editing the =s64-p at the end of a link (applicable to other
+   things too!!)). Don't fetch them from discord or a blocked domain or they
+   wont display.
+
+2. Some parts such as the Marketplace can entirely by removed (just in HTML if
+   you'd like) without messing up much formatting.
+
+3. A good rule of thumb is to keep backups as well. GitHub (if chosen) should
+   automatically do this for you with version control, but manually downloading 
+   the site every so often is a good idea to look back to old code you may need.
+
+4. Don't stress. If you don't need to edit it, don't! After updating the
+   officers, the hard part is over. All upkeep is soley on medialibrary.html
+   and scripts.js.
+
+5. Stay updated and promote the website. Ensure that you keep the site updated 
+   every so often, possibly no more than 1 week after a meeting (if slides
+   remain the choice of presentations). Promoting the website can increase 
+   traffic and allow students to get an idea about our club, while being
+   able to get in contact with us.
+
+6. Try to keep all images (other than favicons or meta:og's if applicable) as
+   WEBPs. It decreases loading time significantly with our medium ammount of
+   images and promotes continuity.
+
+
+--------------------------------------------------------------------------------
+
+As of now, I will keep sit.8pairs.net updated, and it will proxy the github
+site to it, meaning all changes will be shown automatically.
+
+If you would not like to continue with that domain, that is entirely ok, just
+remember to change all links in the code to reflect the new domain.
+
+--------------------------------------------------------------------------------
+
+
+Good luck :3
+Find my contacts on 8pairs.net

@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+/* 
+    Honestly this is all so terrible...
+    To me it makes sence but it may not to you. I kept most names
+    human readable. You can recode this, or "if it works, dont
+    fuck with it." If it becomes an issue you can call upon me
+    and I can see what I can do.
+
+    Don't forget to incorporate the data-themes if you add more 
+    elements!!
+
+    I hope you know how CSS selectors work. If not, they're
+    amazing and you should learn, not sure how it affects
+    performance.
+*/
+
+:root[data-theme='light'] {
+    --body-background-color: #fff;
+    --footer-background-color: #f0f0f0;
+    --hr-color: #8d8d8d;
+    --pre-header-color: #f0f0f0;
+    --header-data-color: #fff;
+    --header-data-color-d: #f7f7f7;
+    --img-box-shadow: #7a7a7a;
+    --container-box-shadow: #c5c5c56b;
+    --body-shadow: #00000040 0 0 9px;
+    --text-header: #6b6b6b;
+    --text-footer: #8a8a8a;
+    --text-general: #7a7a7a;
+    --market-filter: opacity(.6);
+    --background-image: url("images/background-light.svg");
+
+
+    &::-webkit-scrollbar[data-theme='light'] {
+        width: 16px;
+    }
+
+    &::-webkit-scrollbar-thumb[data-theme='light'] {
+        background-color: #bdbdbd;
+        border-radius: 10px;
+        border: 3px solid #fff;
+    }
+}
+
+:root[data-theme='dark'] {
+    --body-background-color: #2c2c2c;
+    --footer-background-color: #191919;
+    --hr-color: #8d8d8d;
+    --pre-header-color: #1a1a1a;
+    --header-data-color: #222;
+    --header-data-color-d: #282828;
+    --img-box-shadow: #000;
+    --container-box-shadow: #0000006b;
+    --body-shadow: #000000bf 0 0 9px;
+    --text-header: #a8a8a8;
+    --text-footer: #d5d5d5;
+    --text-general: #d6d6d6;
+    --market-filter: invert(.5);
+    --background-image: url("images/background-dark.svg");
+    
+
+    &::-webkit-scrollbar[data-theme='dark'] {
+        width: 16px;
+    }
+
+    &::-webkit-scrollbar-thumb[data-theme='dark'] {
+        background-color: var(--header-data-color) !important;
+        border-radius: 10px;
+        border: 3px solid var(--header-data-color-d) !important;
+    }
+}
+
+body {
+    font-family: "Libre Franklin";
+    font-size: 15px;
+    background-color: var(--body-background-color);
+    user-select: none;
+    margin: 0;
+    background-image: var(--background-image);
+    background-attachment: fixed;
+}
+
+#body {
+    width: 80%;
+    margin: auto;
+    box-shadow: var(--body-shadow);
+}
+
+.moveover {
+    margin-right: 7%;
+}
+
+.footer-alert {
+    background-color: #ffff00;
+    border-radius: 5px;
+}
+
+.un {
+    display: inline-block;
+
+    &::after {
+        content: '';
+        width: 0px;
+        height: 1px;
+        display: block;
+        background: currentColor;
+        transition: 200ms;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+#footer {
+    height: 120px;
+    padding: 30px;
+    color: var(--text-footer);
+    background-color: var(--footer-background-color);
+
+    >hr {
+        border: 0;
+        height: 1px;
+        background-color: var(--hr-color);
+    }
+}
+
+#hover {
+    cursor: pointer;
+}
+
+#footer-01 {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#footer-02,
+#footer-03 {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#footer-a1 {
+    margin-left: 5px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+#footer-a2 {
+    margin-left: 30px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+#footer-a3 {
+    margin-left: 30px;
+    opacity: 0.7;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#footer-a4 {
+    margin-left: 30px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+#footer-a5 {
+    margin-right: 5px;
+    float: right;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+[id^="footer-img-0"] {
+    float: right;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+    margin-left: 29px;
+}
+
+[id^="footer-img-0"]:hover {
+    transform: translateY(-2px);
+    transition: 100ms ease-in-out;
+}
+
+#footer-img-01 {
+    height: 20px;
+    margin-right: 30px;
+}
+
+#footer-img-02 {
+    height: 23px;
+}
+
+#footer-img-03 {
+    height: 22px;
+}
+
+#footer-img-d {
+    height: 24px;
+    margin-right: 27px;
+    float: right;
+    cursor: pointer;
+}
+
+#pre-header {
+    height: 25px;
+    background-color: var(--pre-header-color);
+    margin-top: -10px;
+}
+
+#header {
+    height: 70px;
+    background-color: var(--header-data-color);
+    color: var(--text-header);
+    padding: 30px;
+
+    >hr {
+        width: calc(100% - 320px);
+        float: right;
+        margin-top: 10px;
+        height: 1px;
+        border: 0;
+        background-size: cover;
+        background-image: url(images/hr-fix.webp);
+        background-repeat: no-repeat;
+    }
+}
+
+#header-logo {
+    height: 80px;
+    filter: invert(.25);
+    margin-left: 30px;
+    margin-top: -10px;
+    float: left;
+    position: absolute;
+    cursor: pointer;
+}
+
+#header-01 {
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+#header-02 {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+#data {
+    background-color: var(--header-data-color);
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+
+    >hr {
+        border: 0;
+        height: 1px;
+        background-color: var(--hr-color);
+        width: calc(100% + 2px);
+        margin: -1px -1px;
+        display: none;
+    }
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1.3s ease; 
+}
+
+.banner {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--text-general);
+}
+
+h6 {
+    opacity: 0.4;
+    margin-top: -10px;
+}
+
+#container-whoami {
+    margin: auto;
+    margin-bottom: 50px;
+
+    >#container {
+        box-shadow: 0 0 15px var(--container-box-shadow);
+        width: 25%;
+        display: inline-table;
+        height: 380px;
+        background-color: var(--header-data-color);
+        overflow: scroll;
+
+        >#inner {
+            height: 55%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        >#inner1 {
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 1.4;
+            height: 45%;
+            color: var(--text-general);
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .iot {
+            background-image: url('images/iot.webp');
+        }
+
+        .sit {
+            background-image: url('images/us.webp');
+        }
+
+        .community {
+            background-image: url('images/technology.webp');
+        }
+    }
+}
+
+#container-imin {
+    /* Left in incase website got unaligned */
+    /* width: calc(100% + 2px);
+    margin: -1px -1px; */
+    width: 100%;
+    height: 580px;
+    background-color: var(--header-data-color-d);
+
+    >hr {
+        border: 0;
+        height: 1px;
+        width: 90%;
+        background-color: var(--hr-color);
+    }
+
+    >#container {
+        width: 30%;
+        height: 200px;
+        line-height: 1.4;
+        color: var(--text-general);
+        display: inline-table;
+        margin: 5px;
+    }
+}
+
+#container-officers {
+    height: 1000px;
+    width: 100%;
+
+    >#container {
+        background-color: var(--header-data-color);
+        width: 30%;
+        height: 400px;
+        line-height: 1.4;
+        color: var(--text-general);
+        display: inline-table;
+        margin: 5px;
+        box-shadow: 0 0 15px var(--container-box-shadow);
+    
+        >p {
+            margin-top: -15px;
+            opacity: 0.6;
+        }
+
+        >img {
+            margin: 19px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--img-box-shadow);
+        }
+
+        >h2 {
+            margin-top: -20px;
+        }
+
+        >#interests {
+            text-align: left;
+            margin-left: 30px;
+        }
+    }
+
+    >#containerNEH {
+        display: none;
+        background-color: var(--header-data-color);
+        width: 30%;
+        height: 400px;
+        line-height: 1.4;
+        color: var(--text-general);
+        margin: 5px;
+        box-shadow: 0 0 15px var(--container-box-shadow);
+    
+        >p {
+            margin-top: -15px;
+            opacity: 0.6;
+        }
+
+        >img {
+            margin: 19px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--img-box-shadow);
+        }
+
+        >h2 {
+            margin-top: -20px;
+        }
+
+        >#interests {
+            text-align: left;
+            margin-left: 30px;
+        }
+    }
+}
+
+#container-market {
+    background-color: var(--header-data-color-d);
+    /* Left in incase website got unaligned */
+    /* width: calc(100% + 2px);
+    margin: -1px -1px; */
+    width: 100%;
+    height: 740px;
+
+    >hr {
+        border: 0;
+        height: 1px;
+        width: 90%;
+        background-color: var(--hr-color);
+    }
+
+    >#container {
+        text-align: left;
+        float: left;
+        width: 45%;
+        display: inline;
+        margin-left: 5%;
+        height: fit-content;
+        line-height: 1.4;
+        color: var(--text-general);
+    }
+
+    >img {
+        max-width: 500px;
+        width: 30%;
+        filter: var(--market-filter);
+        margin-top: 40px;
+    }
+}
+
+#container-other {
+    width: 100%;
+    height: 350px;
+
+    >#container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 23%;
+        display: inline-table;
+        height: 200px;
+        line-height: 1.4;
+        color: var(--text-general);
+        box-shadow: 0 0 15px var(--container-box-shadow);
+
+        >hr {
+            border: 0;
+            height: 1px;
+            width: 90%;
+            background-color: var(--hr-color);
+        }
+    }
+}
+
+/* warning header */
+.warn-header {
+    overflow: hidden;
+    width: calc(100% - 20px);
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: yellow;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}

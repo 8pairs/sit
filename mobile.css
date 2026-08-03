@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+/* 
+   Same as style.css, but for mobile site. It sucks
+   about as bad but is much shorter and was written
+   long after the main site.
+
+   Don't forget this version exists !!
+*/
+
+:root[data-theme='light'] {
+    --body-background-color: #fff;
+    --footer-background-color: #f0f0f0;
+    --hr-color: #8d8d8d;
+    --pre-header-color: #f0f0f0;
+    --header-data-color: #fff;
+    --header-data-color-d: #f7f7f7;
+    --img-box-shadow: #7a7a7a;
+    --container-box-shadow: #c5c5c56b;
+    --body-shadow: #00000040 0 0 9px;
+    --text-header: #6b6b6b;
+    --text-footer: #8a8a8a;
+    --text-general: #7a7a7a;
+    --market-filter: opacity(.6);
+
+    &::-webkit-scrollbar[data-theme='dark'] {
+        width: 16px;
+    }
+
+    &::-webkit-scrollbar-thumb[data-theme='dark'] {
+        background-color: #bdbdbd;
+        border-radius: 10px;
+        border: 3px solid #fff;
+    }
+}
+
+:root[data-theme='dark'] {
+    --body-background-color: #2c2c2c;
+    --footer-background-color: #191919;
+    --hr-color: #8d8d8d;
+    --pre-header-color: #1a1a1a;
+    --header-data-color: #222;
+    --header-data-color-d: #282828;
+    --img-box-shadow: #000;
+    --container-box-shadow: #0000006b;
+    --body-shadow: #000000bf 0 0 9px;
+    --text-header: #a8a8a8;
+    --text-footer: #d5d5d5;
+    --text-general: #d6d6d6;
+    --market-filter: invert(.5);
+
+    &::-webkit-scrollbar[data-theme='dark'] {
+        width: 16px;
+    }
+
+    &::-webkit-scrollbar-thumb[data-theme='dark'] {
+        background-color: var(--header-data-color) !important;
+        border-radius: 10px;
+        border: 3px solid var(--header-data-color-d) !important;
+    }
+}
+
+body {
+    background-color: var(--body-background-color);
+    font-family: "Libre Franklin";
+    font-size: 35px;
+    user-select: none;
+    margin: 0;
+}
+
+#footer {
+    font-size: 20px;
+    height: fit-content;
+    padding: 30px;
+    color: var(--text-footer);
+    background-color: var(--footer-background-color);
+    text-align: center;
+
+    >hr {
+        border: 0;
+        height: 1px;
+        background-color: var(--hr-color);
+    }
+}
+
+#footer-02 {
+    margin-left: 60px;
+}
+
+#footer-a1 {
+    opacity: 0.7;
+}
+
+#footer-a2,
+#footer-a3,
+#footer-a4 {
+    margin-left: 60px;
+    opacity: 0.7;
+}
+
+#footer-a5 {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+#footer-img-01 {
+    height: 48px;
+}
+
+#footer-img-02 {
+    height: 52px;
+    margin-bottom: -3px;
+    margin-left: 120px;
+}
+
+#footer-img-03 {
+    height: 50px;
+    margin-left: 120px;
+}
+
+#footer-img-d {
+    height: 50px;
+    margin-left: 120px;
+}
+
+#header {
+    height: 150px;
+    background-color: var(--header-data-color);
+    color: var(--text-header);
+    padding: 30px;
+
+    >hr {
+        width: 60%;
+        float: right;
+        margin-top: 20px;
+        height: 1px;
+        border: 0;
+        background-size: cover;
+        background-image: url(images/hr-fix.webp);
+        background-repeat: no-repeat;
+    }
+}
+
+#pre-header {
+    height: 40px;
+    background-color: var(--pre-header-color);
+    margin-top: -10px;
+}
+
+#header-logo {
+    height: 150px;
+    filter: invert(.25);
+    float: left;
+    position: absolute;
+}
+
+#header-01 {
+    margin-left: 46%;
+}
+
+#data {
+    background-color: var(--header-data-color);
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+
+    >b {
+        position: absolute;
+        margin: 6px 0 0 -18px;
+        color: rgb(86, 85, 131);
+        cursor: pointer;
+    }
+
+    >hr {
+        border: 0;
+        height: 1px;
+        background-color: var(--hr-color);
+        display: none;
+    }
+}
+
+#banner-mobile {
+    width: 100%;
+    height: fit-content;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--text-general);
+}
+
+h6 {
+    opacity: 0.4;
+    margin-top: -10px;
+}
+
+#container-whoami {
+    margin: auto;
+    margin-bottom: 50px;
+
+    >#container {
+        box-shadow: 0 0 15px var(--container-box-shadow);
+        width: 45%;
+        display: inline-table;
+        height: fit-content;
+        background-color: var(--header-data-color);
+        overflow: scroll;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        >.s {
+            height: 260px !important;
+        }
+
+        >#inner {
+            height: 300px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        >#inner1 {
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: 1.2;
+            height: 500px;
+            color: var(--text-general);
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .iot {
+            background-image: url('images/iot.webp');
+        }
+
+        .sit {
+            background-image: url('images/us.webp');
+        }
+
+        .community {
+            background-image: url('images/technology.webp');
+        }
+
+        .chalk {
+            background-image: url('images/chalk.webp');
+        }
+    }
+}
+
+#container-imin {
+    /* Left in incase website got unaligned */
+    /* width: calc(100% + 2px);
+    margin: -1px -1px; */
+    height: fit-content;
+    background-color: var(--header-data-color-d);
+
+    >hr {
+        border: 0;
+        height: 1px;
+        width: 90%;
+        background-color: var(--hr-color);
+    }
+
+    >#container {
+        font-size: 30px;
+        width: 45%;
+        height: 200px;
+        line-height: 1.4;
+        color: var(--text-general);
+        display: inline-table;
+        margin: 5px;
+    }
+}
+
+#container-officers {
+    height: fit-content;
+    width: 100%;
+    font-size: 30px;
+
+    >#container {
+        background-color: var(--header-data-color);
+        width: 30%;
+        height: fit-content1;
+        line-height: 1.4;
+        color: var(--text-general);
+        display: inline-table;
+        margin: 5px;
+        box-shadow: 0 0 15px var(--container-box-shadow);
+
+        >p {
+            margin-top: -15px;
+            opacity: 0.6;
+        }
+
+        >img {
+            margin: 19px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--img-box-shadow);
+        }
+
+        >h2 {
+            margin-top: -20px;
+        }
+
+        >#interests {
+            text-align: left;
+            margin-left: 30px;
+        }
+    }
+}
+
+#container-other {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--header-data-color-d);
+
+    >#container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 27%;
+        display: inline-table;
+        height: fit-content;
+        line-height: 1.4;
+        color: var(--text-general);
+        box-shadow: 0 0 15px var(--container-box-shadow);
+
+        >hr {
+            border: 0;
+            height: 1px;
+            width: 90%;
+            background-color: var(--hr-color);
+        }
+    }
+}
+
+#x {
+    font-size: 40px;
+    margin-left: -40px !important;
+}
+
+#bit-bigger {
+    margin-top: 68px;
+}
