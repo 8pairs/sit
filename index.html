@@ -29,7 +29,7 @@
         <div id="pre-header"></div>
         <!-- Header container -->
         <div id="header">
-            <img src="icons/sit-logo.webp" id="header-logo" onclick="c1()">
+            <img src="icons/sit-logo.webp" id="header-logo" onclick="c1()" alt="S.I.T Logo">
             <hr>
             <span id="header-01" class="un" onclick="scrollToSection('about-us')">About Us</span>
             <span id="header-02" class="un" onclick="scrollToSection('qna')">Q&A</span>
@@ -41,10 +41,10 @@
         <div id="data">
             <div class="slider">
               <div class="slides">
-                <img src="images/banner1.webp" class="banner">
-                <img src="images/banner2.webp" class="banner">
-                <img src="images/banner3.webp" class="banner">
-                <img src="images/banner4.webp" class="banner">
+                <img src="images/banner1.webp" class="banner" alt="Banner 1">
+                <img src="images/banner2.webp" class="banner" alt="Banner 2">
+                <img src="images/banner3.webp" class="banner" alt="Banner 3">
+                <img src="images/banner4.webp" class="banner" alt="Banner 4">
               </div>
             </div>
             <!-- Who are we container -->
@@ -102,12 +102,13 @@
             </div>
             <!-- Officer container -->
             <!-- Here is the first major area of change -->
+            <!-- If you use google images as profile pictures, ensure that they end with "s64" as seen below, as that declares their size -->
             <!-- Refer to devnotes.txt for help -->
             <div id="container-officers">
                 <br>
                 <h1 id="officers">Meet Our Officers</h1>
                 <div id="container">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocLem7OQgd77Z4FhG-d5U-jHYnIMBHZwMpW526a9pPSCPllF-dkw=s64-p">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocLem7OQgd77Z4FhG-d5U-jHYnIMBHZwMpW526a9pPSCPllF-dkw=s64-p" alt="President Profile Picture">
                     <h2>Jake Cu<br>President</h2><p>12th grade</p>
                     <div id="interests">
                         <li>Passionate about computer hardware</li>
@@ -118,7 +119,7 @@
                     </div>
                 </div>
                 <div id="container">
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJJP3UvgwnHmDELKdWoXaUUhsPhZ6SjV_jXQLmKNzlGc0zogQ=s64-p">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJJP3UvgwnHmDELKdWoXaUUhsPhZ6SjV_jXQLmKNzlGc0zogQ=s64-p" alt="Vice President Profile Picture">
                     <h2>Jonathan Filomeno<br>Vice President</h2><p>12th grade</p>
                     <div id="interests">
                         <li>AP CSP/CSA Student</li>
@@ -132,7 +133,7 @@
                     </div>
                 </div>
                 <div id="container">
-                    <img src="icons/isaac.webp">
+                    <img src="icons/isaac.webp" alt="Secretary Profile Picture">
                     <h2>Isaac Heydelaar<br>Secretary</h2><p>12th grade</p>
                     <div id="interests">
                         <li>AP comp. Sci A & Intro To Electronics Student</li>
@@ -142,7 +143,7 @@
                     </div>
                 </div>
                 <div id="container">
-                    <img src="icons/gabriel.webp">
+                    <img src="icons/gabriel.webp" alt="Treasuere Profile Picture">
                     <h2>Gabriel Valdes<br>Historian & Treasurer</h2><p>12th grade</p>
                     <div id="interests">
                         <li>Taking AP Computer Science A</li>
@@ -153,7 +154,7 @@
                     </div>
                 </div>
                 <div id="container">
-                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVSIz9fmdNsXzKz-VBs29ZnnDqCRd_-JCsQuEVSf_FJVDACb68e=s64-p">
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVSIz9fmdNsXzKz-VBs29ZnnDqCRd_-JCsQuEVSf_FJVDACb68e=s64-p" alt="Lead Advertiser Profile Picture">
                     <h2>Kendrick Bruan<br>Lead Advertiser</h2><p>12th grade</p>
                     <div id="interests">
                         <li>Qualified</li>
@@ -163,7 +164,7 @@
                 </div>
                 <!-- Ignore; refer to bottom of scripts.js -->
                 <div id="containerNEH">
-                    <img src="icons/neh.webp">
+                    <img src="icons/neh.webp" alt="N.E.H Profile Picture">
                     <h2>Jeremiah Garcia<br>N.E.H Officer</h2><p>12th grade</p>
                     <div id="interests">
                         <li>Nothing ever happens.</li>
@@ -189,7 +190,7 @@
                     <p>General rules of society apply, must be a member of SIT to participate.<br>Please see our <span onclick="e1()" id="hover"><u>media library</u></span> or speak to an officer for more information!<br><br>General information and rules are available on our <span onclick="discord()" id="hover"><u>Discord server</u></span>!</p>
                     <h6>*We do not control any sales that happen outside our clubs' marketplace. Please proceed with caution and behave responsibly. See the official ToS in our marketplace Discord channel</h6>
                 </div>
-                <img src="images/marketplace.webp">
+                <img src="images/marketplace.webp" alt="Marketplace Handshake Banner">
                 <br>
                 <br>
                 <hr>
@@ -220,16 +221,16 @@
             <span id="footer-01" class="un" onclick="contactUs()">Contact Us</span>
             <span id="footer-02" class="un" onclick="footerComissions()">Find Commissions</span>
             <span id="footer-03" class="un" onclick="footerMediaLib()">Media Library</span>
-            <img id="footer-img-01" onclick="instagram()" src="icons/instagram.webp" title="Instagram">
-            <img id="footer-img-02" onclick="discord()" src="icons/discord.webp" title="Discord">
-            <img id="footer-img-03" onclick="contact()" src="icons/gmail.webp" title="E-Mail">
+            <img id="footer-img-01" onclick="instagram()" src="icons/instagram.webp" title="Instagram" alt="Instagram Logo">
+            <img id="footer-img-02" onclick="discord()" src="icons/discord.webp" title="Discord" alt="Discord Logo">
+            <img id="footer-img-03" onclick="contact()" src="icons/gmail.webp" title="E-Mail" alt="Gmail Logo">
             <hr>
             <span id="footer-01" class="un" onclick="info()">Info</span>
 	        <span id="footer-02" class="un" onclick="alert('👀 No Cookies')">Cookies</span>
             <span id="footer-02" class="un" onclick="footerLegacy()">Legacy</span>
             <span id="footer-02" class="un" onclick="footerFeedback()">Feedback</span>
-            <img id="footer-img-d" onclick="developer()" src="icons/developer.webp" title="Developer Info">
-            <img id="footer-img-d" onclick="changelog()" src="icons/changelog.webp" title="Changelog">
+            <img id="footer-img-d" onclick="developer()" src="icons/developer.webp" title="Developer Info" alt="Developer Info Icon">
+            <img id="footer-img-d" onclick="changelog()" src="icons/changelog.webp" title="Changelog" alt="Changelog Icon">
             <br><br><br><br>
             <span id="footer-a1" onclick="goober()">Copydont S.I.T<sup> &copy;</sup></span>
             <span id="footer-a2">Located in room 202</span>
