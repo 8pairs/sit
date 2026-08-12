@@ -5,34 +5,33 @@
 // Version counter (prints to footer automatically)
 // Follow this general format for version upkeep for this site:  v3.x.x Official
 // [Big updates, wont change unless you write an entirely new site] . [Minimal updates like refractoring, changing UI, etc] . [Hotfixes or similar small updates]     [We're no longer in beta, so Official remains.]
-
-const versionNumber = "v3.12.0 Official"
+const versionNumber = "v3.12.2 Official"
 document.getElementById('footer-a4').innerHTML = versionNumber
 
-// Alert popup called by footer button. (change or add Email to yours or an apropriate email if moved to github)
+// Alert popup called by footer button. (change or add Email to yours or an apropriate email)
 function info() {
     alert('Version ' + versionNumber + '\n' +
         'Mobile Support: Avalible\n\n' +
-        'Current URL: https://sit.8pairs.net/\n' + // Subject to change
-        'Contact isaac@8pairs.net for inquiries or changes') // Add your contacts here if you would like to
+        'Current Suggested URL: https://sit.8pairs.net/\n' + // Remove if you choose to not use sit.8pairs.net (Please tell me if you decide to stop using my domain so I can shut down the subdomain)
+        'Current Developer URL: https://8pairs.github.io/sit/\n' +
+        'Contact isaac@8pairs.net for inquiries or changes.') // Add your contacts here if you would like to
 }
 
-// Popup that alerts the user of Buffer Codes, and which of my servers they are connected to
-// Remove if not proxied to sit.8pairs.net
-function developer() {
-    fetch(window.location.href, { method: "HEAD" })
-        .then(res => {
-            alert("You are connected to server: " + res.headers.get("X-Server-ID") + " \n\nfixyourposture\noverride\nmobile\nsuhsd\nneh\niceberg\nss");
-        });
-}
+// Ignore this code, I may come back to it.
+//function developer() {
+//    fetch(window.location.href, { method: "HEAD" })
+//        .then(res => {
+//            alert("You are connected to server: " + res.headers.get("X-Server-ID") + " \n\nfixyourposture\noverride\nmobile\nsuhsd\nneh\niceberg\nss");
+//        });
+//}
 
 // Non server header reliant version of the developer popup
-// Uncomment if you remove the above snippit
-// function developer() {
-//     alert("\n\nfixyourposture\noverride\nmobile\suhsd\nneh\niceberg\nss");
-// }
+// Remove "proxied" if you devide to no longer use my domain
+function developer() {
+    alert("fixyourposture\noverride\nmobile\suhsd\nneh\niceberg\nss");
+}
 
-// Changelog, good to keep updated for your own sake. \u00B7 is a missing UTF-8 tag friendly middot
+// Changelog, good to keep updated for your own sake. \u00B7 is a missing UTF-8 tag friendly mid-dot.
 function changelog() {
     alert('Changelog:\n' +
         '11/12/25 \u00B7 Added 3 new banners\n' +
@@ -42,7 +41,8 @@ function changelog() {
         '1/25/26 \u00B7 Removed error codes, cleaned up scripts.css, media library edits\n' +
         '2/25/26 \u00B7 General fixes and THE GREAT COMMENTING\n' +
 	    '3/5/26 \u00B7 Fixed corrupted banner.\n' +
-        '8/2/26 \u00b7 Github site updated to reflect sit.8pairs.net - Prepperation for further development. Added warning header'
+        '8/2/26 \u00b7 Github site updated to reflect sit.8pairs.net - Prepperation for further development. Added warning header.\n' +
+		'8/11/26 \u00b7 Bug fixes and removed "Connected to server: x" from developer popup.'
     )
 }
 
@@ -85,7 +85,7 @@ function linkedB() {
     }, 1800);
 }
 
-// Banner sliding function - does not need editing if banners images are changed
+// Banner sliding function, does not need editing if banners images are changed
 let index = 0;
 const slides = document.querySelector(".slides");
 const total = document.querySelectorAll(".banner").length;
@@ -112,6 +112,7 @@ applyTheme();
 
 // Buffer codes to trigger an event on typing
 // Remove if you no longer want these functions
+// Contact me if you would like to add a new typable code and dont know how
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
 
 let typedBuffer = "";
