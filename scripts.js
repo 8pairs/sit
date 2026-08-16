@@ -34,6 +34,7 @@ function developer() {
 // Changelog, good to keep updated for your own sake. \u00B7 is a missing UTF-8 tag friendly mid-dot.
 function changelog() {
     alert('Changelog:\n' +
+		'8/16/26 \u00B7 Updated officer profiles and footer to reflect the present\n' +
         '11/12/25 \u00B7 Added 3 new banners\n' +
         '11/14/25 \u00B7 Redesigned banners to include SIT mascot\n' +
         '11/15/25 \u00B7 Removed Herobrine\n' +
