@@ -34,7 +34,6 @@ function developer() {
 // Changelog, good to keep updated for your own sake. \u00B7 is a missing UTF-8 tag friendly mid-dot.
 function changelog() {
     alert('Changelog:\n' +
-		'8/16/26 \u00B7 Updated officer profiles and footer to reflect the present\n' +
         '11/12/25 \u00B7 Added 3 new banners\n' +
         '11/14/25 \u00B7 Redesigned banners to include SIT mascot\n' +
         '11/15/25 \u00B7 Removed Herobrine\n' +
@@ -43,7 +42,8 @@ function changelog() {
         '2/25/26 \u00B7 General fixes and THE GREAT COMMENTING\n' +
 	    '3/5/26 \u00B7 Fixed corrupted banner.\n' +
         '8/2/26 \u00b7 Github site updated to reflect sit.8pairs.net - Prepperation for further development. Added warning header.\n' +
-		'8/11/26 \u00b7 Bug fixes and removed "Connected to server: x" from developer popup.'
+		'8/11/26 \u00b7 Bug fixes and removed "Connected to server: x" from developer popup.\n' +
+		'8/16/26 \u00B7 Updated officer profiles and footer to reflect the present'
     )
 }
 
