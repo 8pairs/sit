@@ -5,7 +5,7 @@
 // Version counter (prints to footer automatically)
 // Follow this general format for version upkeep for this site:  v3.x.x Official
 // [Big updates, wont change unless you write an entirely new site] . [Minimal updates like refractoring, changing UI, etc] . [Hotfixes or similar small updates]     [We're no longer in beta, so Official remains.]
-const versionNumber = "v3.12.2 Official"
+const versionNumber = "v3.12.3 Official"
 document.getElementById('footer-a4').innerHTML = versionNumber
 
 // Alert popup called by footer button. (change or add Email to yours or an apropriate email)
