@@ -43,7 +43,8 @@ function changelog() {
 	    '3/5/26 \u00B7 Fixed corrupted banner.\n' +
         '8/2/26 \u00b7 Github site updated to reflect sit.8pairs.net - Prepperation for further development. Added warning header.\n' +
 		'8/11/26 \u00b7 Bug fixes and removed "Connected to server: x" from developer popup.\n' +
-		'8/16/26 \u00B7 Updated officer profiles and footer to reflect the present'
+		'8/16/26 \u00B7 Updated officer profiles and footer to reflect the present\n' +
+		'8/16/26 \u00b7 Fix mobile.html link functions'
     )
 }
 
