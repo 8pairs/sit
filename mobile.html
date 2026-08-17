@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="mobile.css" />
     <meta charset="UTF-8">
     <noscript>You don't have JavaScript enabled.</noscript>
-    <!-- None of this below will be applicable if the site transfers -->
+    <!-- Keep unless this site is no longer proxied to sit.8pairs.net -->
     <meta name="description" content="The official site for the ORHS club Student Integrated Technologies">
     <meta property="og:title" content="8pairs - Landing">
     <meta property="og:description" content="The official site for the ORHS club Student Integrated Technologies">
@@ -24,7 +24,7 @@
     <div id="pre-header"></div>
     <!-- Header -->
     <div id="header">
-        <img src="icons/sit-logo.webp" id="header-logo" onclick="c1()" alt="SIT Logo">
+        <img src="icons/sit-logo.webp" id="header-logo" alt="SIT Logo">
         <hr>
         <span id="header-01">Welcome to the S.I.T website!</span>
     </div>
@@ -78,7 +78,7 @@
             </div>
             <div id="container">
                 <h2>Do you have any socials?</h2>
-                <p>Yes! You can contact us through our official <span onclick="b1()" id="hover"><u>Instagram</u></span> account, <span onclick="b2()" id="hover"><u>Discord er</u></span>, <span onclick="b3()" id="hover"><u>Gmail</u></span>, or individually as <span onclick="linkedB()" id="hover"><u>linked below</u></span>. We are  available during school hours and can be found around campus.</p>
+                <p>Yes! You can contact us through our official <span onclick="instagram()" id="hover"><u>Instagram</u></span> account, <span onclick="discord()" id="hover"><u>Discord server</u></span>, <span onclick="contact()" id="hover"><u>Gmail</u></span>, or individually as <span onclick="linkedB()" id="hover"><u>linked below</u></span>. We are available during school hours and can be found around campus.</p>
             </div>
             <div id="container">
                 <h2>Are one-on-ones available?</h2>
@@ -144,25 +144,25 @@
     </div>
     <!-- Footer -->
     <div id="footer">
-        <span id="footer-01" onclick="a1()">Find Commissions</span>
-        <span id="footer-02" onclick="e1()">Media Library</span>
-        <span id="footer-01" onclick="info()">Info</span>
+        <span id="footer-01" onclick="footerComissions()">Find Commissions</span>
+        <span id="footer-02" onclick="footerMediaLib()">Media Library</span>
+        <span id="footer-02" onclick="info()">Info</span>
         <span id="footer-02" onclick="alert('No Cookies')">Cookies</span>
-        <span id="footer-02" onclick="c1()">Legacy</span>
-        <span id="footer-02" onclick="f1()">Feedback</span>
+        <span id="footer-02" onclick="footerLegacy()">Legacy</span>
+        <span id="footer-02" onclick="footerFeedback()">Feedback</span>
         <hr>
-        <img id="footer-img-01" onclick="b1()" src="icons/instagram.webp" alt="Instagram Logo">
-        <img id="footer-img-02" onclick="b2()" src="icons/discord.webp" alt="Discord Logo">
-        <img id="footer-img-03" onclick="b3()" src="icons/gmail.webp" alt="Gmail Logo">
+        <img id="footer-img-01" onclick="instagram()" src="icons/instagram.webp" alt="Instagram Logo">
+        <img id="footer-img-02" onclick="discord()" src="icons/discord.webp" alt="Discord Logo">
+        <img id="footer-img-03" onclick="contact()" src="icons/gmail.webp" alt="Gmail Logo">
         <img id="footer-img-d" onclick="developer()" src="icons/developer.webp" alt="Developer Icon">
 		<img id="footer-img-d" onclick="changelog()" src="icons/changelog.webp" alt="Changelog Icon">
         <hr>
         <span id="footer-a1" onclick="goober()">Copydont S.I.T<sup> &copy;</sup></span>
         <span id="footer-a2">Located in room 202</span>
-        <span id="footer-a3" onclick="d1()">Source Code</span>
+        <span id="footer-a3" onclick="footerSource()">Source Code</span>
         <span id="footer-a4"></span>
         <br><br>
-        <span id="footer-a5">Art on banners by <span onclick="g1()" id="hover"><u>axel</u></span> circa 2025</span>
+        <span id="footer-a5">Art on banners by <span onclick="footerCredit()" id="hover"><u>axel</u></span> circa 2025</span>
     </div>
 <!-- JQuery, Status, Scripts -->
 <script src="scripts.js"></script>
